@@ -1,14 +1,14 @@
-console.log("Задание 2-1");
+// console.log('Задание 2-1');
 
 const delay = ms => {
-    return new Promise(resolve => {
-        setTimeout(() => {
-            resolve(ms);
-        }, ms);
-    });
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve(ms);
+    }, ms);
+  });
 };
 
-const logger = time => console.log(`Resolved after ${time}ms`);
+const logger = time => console.log(`Задание 2-1. Resolved after ${time}ms`);
 
 // Вызовы функции для проверки
 delay(2000).then(logger); // Resolved after 2000ms
